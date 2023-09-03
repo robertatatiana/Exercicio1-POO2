@@ -1,0 +1,12 @@
+# Arquivos de compilação e depuração
+bin/
+obj/
+
+# Arquivos de saída do Visual Studio
+*.suo
+*.user
+*.sln.docstates
+
+# Arquivos do Rider
+.idea/
+*.sln.iml

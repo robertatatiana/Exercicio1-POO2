@@ -4,12 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Exercicio2
+namespace Exercicio3
 {
     internal class Varejo : Empresa, IEmpresa
     {
-        public Varejo(string nome, string cNPJ) : base(nome, cNPJ)
+        private readonly EnviarNotificacaoWhatsApp notificacaoWhatsApp;
+        public Varejo(string nome, string cNPJ, EnviarNotificacaoWhatsApp notificacaoWhatsApp) : base(nome, cNPJ)
         {
+            this.notificacaoWhatsApp = notificacaoWhatsApp;
         }
 
         public void ImprimirInformacoes()
@@ -22,6 +24,8 @@ namespace Exercicio2
         public void RealizarVenda()
         {
             Console.WriteLine("Realizando venda de produtos pela classe Varejo");
+
+            notificacaoWhatsApp.EnviarMensagemCliente();
         }
     }
 }

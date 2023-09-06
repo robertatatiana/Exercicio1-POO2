@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Exercicio2
+namespace Exercicio3
 {
-    internal interface IEmpresa
+    internal interface IEnviarNotificacao
     {
-        public void ImprimirInformacoes();
-        public void RealizarVenda();
+        public void EnviarMensagemCliente();
     }
 }

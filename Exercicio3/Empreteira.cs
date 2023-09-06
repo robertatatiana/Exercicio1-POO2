@@ -4,18 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Exercicio1
+namespace Exercicio3
 {
-    internal abstract class Empresa
+    internal class Empreteira : Empresa, IEmpresa
     {
-        public Empresa(string nome, string cNPJ)
+        public Empreteira(string nome, string cNPJ) : base(nome, cNPJ)
         {
-            Nome = nome;
-            CNPJ = cNPJ;
         }
-
-        public string Nome { get; set; }
-        public string CNPJ { get; set; }
 
         public void ImprimirInformacoes()
         {
@@ -24,6 +19,9 @@ namespace Exercicio1
             Console.WriteLine($"CNPJ: {CNPJ}");
         }
 
-        public abstract void RealizarVenda();
+        public void RealizarVenda()
+        {
+            Console.WriteLine("Realizando venda de serviços pela classe Empreteira");
+        }
     }
 }

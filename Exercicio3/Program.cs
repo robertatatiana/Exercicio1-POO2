@@ -1,4 +1,4 @@
-﻿using Exercicio2;
+﻿using Exercicio3;
 
 internal class Program
 {
@@ -6,13 +6,14 @@ internal class Program
     {
         List<IEmpresa> empresas = new List<IEmpresa>();
 
-        Varejo varejo = new("Atacadão Do Povo", "22.850.643/0001-67");
+        EnviarNotificacaoWhatsApp whatsappNotificacao = new EnviarNotificacaoWhatsApp();
+        Varejo varejo = new("Atacadão Do Povo", "22.850.643/0001-67", whatsappNotificacao);
         Empreteira empreteira = new("Construções Do Povo", "41.144.532/0001-80");
 
         empresas.Add(empreteira);
         empresas.Add(varejo);
 
-        foreach(var i in  empresas) 
+        foreach (var i in empresas)
         {
             i.ImprimirInformacoes();
             i.RealizarVenda();

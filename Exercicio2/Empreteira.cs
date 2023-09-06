@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Exercicio2_POO2
+namespace Exercicio2
 {
     internal class Empreteira : Empresa, IEmpresa
     {

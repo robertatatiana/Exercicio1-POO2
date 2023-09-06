@@ -1,4 +1,4 @@
-﻿using Exercicio1_POO2;
+﻿using Exercicio1;
 
 internal class Program
 {

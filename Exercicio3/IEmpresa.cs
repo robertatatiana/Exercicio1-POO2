@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Exercicio2
+namespace Exercicio3
 {
     internal interface IEmpresa
     {
